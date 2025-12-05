@@ -39,8 +39,9 @@ export function Navigation() {
     >
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
-          <button onClick={() => router.push("/")} className="flex items-center">
-            <span className="text-xl md:text-2xl font-bold">G-Graph Systems</span>
+          <button onClick={() => {
+            window.location.href = "/"}} className="flex items-center">
+            <span className="text-xl md:text-2xl font-bold cursor-pointer">G-Graph Systems</span>
           </button>
 
           {/* Desktop Navigation */}

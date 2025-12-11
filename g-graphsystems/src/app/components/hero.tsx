@@ -95,7 +95,7 @@ export function Hero() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <canvas ref={canvasRef} className="absolute inset-0 w-full h-full" />
 
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/50 to-background" />
+      <div className="absolute inset-0 bg-linear-to-b from-transparent via-background/50 to-background" />
 
       <div className="container mx-auto px-4 lg:px-8 py-20 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
@@ -114,14 +114,14 @@ export function Hero() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button size="lg" className="text-base px-8 group" onClick={scrollToContact}>
+            <Button size="lg" className="text-base px-8 group cursor-pointer" onClick={scrollToContact}>
               Start Your Project
               <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button
               size="lg"
               variant="outline"
-              className="text-base px-8 bg-transparent"
+              className="text-base px-8 bg-transparent cursor-pointer"
               onClick={() => router.push("/work")}
             >
               <Code2 className="mr-2 w-4 h-4" />
@@ -129,15 +129,15 @@ export function Hero() {
             </Button>
           </div>
 
-          <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-primary mb-2">50+</div>
+          <div className="mt-20 grid grid-cols-1 md:grid-cols-1 gap-8">
+            {/* <div className="text-center">
+              <div className="text-3xl md:text-4xl font-bold text-primary mb-2">5+</div>
               <div className="text-sm text-muted-foreground">Projects Delivered</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-primary mb-2">15+</div>
+              <div className="text-3xl md:text-4xl font-bold text-primary mb-2">5+</div>
               <div className="text-sm text-muted-foreground">Enterprise Clients</div>
-            </div>
+            </div> */}
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-primary mb-2">98%</div>
               <div className="text-sm text-muted-foreground">Client Satisfaction</div>

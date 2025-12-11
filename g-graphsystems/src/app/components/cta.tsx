@@ -66,12 +66,12 @@ export function CTA() {
                 </div>
               </div>
 
-              <div className="p-6 bg-gradient-to-br from-primary/10 to-accent/10 rounded-lg border border-primary/20">
+              <div className="p-6 bg-linear-to-br from-primary/10 to-accent/10 rounded-lg border border-primary/20">
                 <h3 className="font-bold mb-2 text-primary">Enterprise Solutions</h3>
                 <p className="text-sm text-muted-foreground mb-3">
                   Looking for dedicated support or long-term partnership? Let's discuss custom packages for your organization.
                 </p>
-                <Button variant="outline" size="sm">
+                <Button className='cursor-pointer' variant="outline" size="sm">
                   Contact Sales
                 </Button>
               </div>
@@ -119,7 +119,7 @@ export function CTA() {
                 />
               </div>
 
-              <Button type="submit" className="w-full group">
+              <Button type="submit" className="w-full group cursor-pointer">
                 Send Message
                 <Send className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Button>

@@ -77,7 +77,7 @@ export default function SecurityCompliancePage() {
                     "Security training for development teams",
                   ].map((feature, i) => (
                     <li key={i} className="flex items-start gap-3">
-                      <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
                         <Check className="w-4 h-4 text-primary" />
                       </div>
                       <span className="text-muted-foreground">{feature}</span>

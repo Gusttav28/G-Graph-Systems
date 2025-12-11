@@ -34,12 +34,12 @@ export function About() {
   return (
     <section id="about" className="py-20 lg:py-32">
       <div className="container mx-auto px-4 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-20">
+        <div className="grid lg:grid-cols-1 gap-12 lg:gap-20 items-center mb-20">
           <div>
             <h2 className="text-3xl md:text-5xl font-bold mb-6 text-balance">
               About <span className="text-primary">G-Graph Systems</span>
             </h2>
-            <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
+            <div className="space-y-4 text-lg lg:w-260 text-muted-foreground leading-relaxed">
               <p>
                 G-Graph Systems is a software engineering company specializing in building custom solutions for startups
                 and large enterprises. Our team combines deep technical expertise with business acumen to deliver
@@ -58,16 +58,16 @@ export function About() {
             </div>
           </div>
 
-          <div className="relative">
-            <div className="aspect-square bg-gradient-to-br from-primary/20 to-accent/20 rounded-lg" />
+          {/* <div className="relative">
+            <div className="aspect-square bg-linear-to-br from-primary/20 to-accent/20 rounded-lg" />
             <div className="absolute inset-0 flex items-center justify-center">
               <img
-                src="/software-team-coding.jpg"
+                src="/g-graphSySS.png"
                 alt="Engineering team collaboration"
                 className="rounded-lg shadow-2xl w-5/6 h-5/6 object-cover"
               />
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">

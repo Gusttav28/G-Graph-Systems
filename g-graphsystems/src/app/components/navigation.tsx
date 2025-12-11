@@ -48,29 +48,29 @@ export function Navigation() {
           <div className="hidden md:flex items-center gap-8">
             <button
               onClick={() => scrollToSection("services")}
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
             >
               Services
             </button>
             <button
               onClick={() => scrollToSection("tech-stack")}
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
             >
               Technology
             </button>
             <button
               onClick={() => scrollToSection("about")}
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
             >
               About
             </button>
             <button
               onClick={() => router.push("/work")}
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
             >
               Work
             </button>
-            <Button onClick={() => scrollToSection("contact")}>Get Started</Button>
+            <Button className="cursor-pointer" onClick={() => scrollToSection("contact")}>Get Started</Button>
           </div>
 
           {/* Mobile Menu Button */}

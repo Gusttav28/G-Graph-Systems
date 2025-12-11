@@ -12,22 +12,22 @@ const services = [
       "Modern, responsive web apps built with cutting-edge frameworks. Scalable architecture designed for growth.",
     features: ["React & Next.js", "Progressive Web Apps", "Real-time Features", "API Development"],
   },
-  {
-    icon: Smartphone,
-    title: "Mobile Development",
-    slug: "mobile-development",
-    description:
-      "Native and cross-platform mobile solutions that deliver exceptional user experiences on iOS and Android.",
-    features: ["React Native", "Native iOS/Android", "Offline-First", "Push Notifications"],
-  },
-  {
-    icon: Cpu,
-    title: "Complex Systems",
-    slug: "complex-systems",
-    description:
-      "Enterprise-grade software systems with microservices architecture, built to handle millions of operations.",
-    features: ["Microservices", "Event-Driven", "High Performance", "Distributed Systems"],
-  },
+  // {
+  //   icon: Smartphone,
+  //   title: "Mobile Development",
+  //   slug: "mobile-development",
+  //   description:
+  //     "Native and cross-platform mobile solutions that deliver exceptional user experiences on iOS and Android.",
+  //   features: ["React Native", "Native iOS/Android", "Offline-First", "Push Notifications"],
+  // },
+  // {
+  //   icon: Cpu,
+  //   title: "Complex Systems",
+  //   slug: "complex-systems",
+  //   description:
+  //     "Enterprise-grade software systems with microservices architecture, built to handle millions of operations.",
+  //   features: ["Microservices", "Event-Driven", "High Performance", "Distributed Systems"],
+  // },
   {
     icon: Database,
     title: "Data Engineering",
@@ -43,13 +43,13 @@ const services = [
       "DevOps and cloud architecture services for AWS, Azure, and GCP. CI/CD pipelines and infrastructure as code.",
     features: ["AWS/Azure/GCP", "Kubernetes", "CI/CD Automation", "Infrastructure as Code"],
   },
-  {
-    icon: Lock,
-    title: "Security & Compliance",
-    slug: "security-compliance",
-    description: "Security-first development with compliance standards. Penetration testing and security audits.",
-    features: ["Security Audits", "GDPR/HIPAA", "Penetration Testing", "Zero-Trust Architecture"],
-  },
+  // {
+  //   icon: Lock,
+  //   title: "Security & Compliance",
+  //   slug: "security-compliance",
+  //   description: "Security-first development with compliance standards. Penetration testing and security audits.",
+  //   features: ["Security Audits", "GDPR/HIPAA", "Penetration Testing", "Zero-Trust Architecture"],
+  // },
 ]
 
 export function Services() {

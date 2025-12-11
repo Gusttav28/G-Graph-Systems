@@ -34,11 +34,11 @@ export function Footer() {
                   Web Development
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a href="#" className="hover:text-primary transition-colors">
                   Mobile Apps
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a href="#" className="hover:text-primary transition-colors">
                   Cloud Solutions

@@ -9,7 +9,7 @@ import { useRouter } from "next/navigation"
 const projects = [
   {
     id: 1,
-    title: "Ian V Sol Musician Producer Portfolio",
+    title: "Ian V Sol - Musician Producer Portfolio",
     description:
       "A modern music production portfolio showcasing professionally crafted beats, full-song arrangements, and high-quality audio engineering, featuring projects across reggaeton, dembow, reggae and pop genres with industry-standard mixing and mastering techniques.",
     category: "Web Application",
@@ -20,7 +20,7 @@ const projects = [
   },
   {
     id: 2,
-    title: "Audit Resturant",
+    title: "Audit Resturant - Inventory System",
     description:
       "A restaurant-focused inventory management system designed to track stock levels in real time, streamline supplier orders, and reduce food waste through automated alerts and precise usage forecasting, ensuring smoother kitchen operations and more accurate cost control.",
     category: "Web Application",
@@ -35,6 +35,16 @@ const projects = [
     "A fitness-oriented application designed for runners and cyclists of every skill level, offering personalized route recommendations based on user performance, preferences, and real-time conditions. The platform provides dynamic maps with live route tracking, predictive difficulty insights, and curated stopping points such as cafés, hydration spots, and local stores, creating a smarter and more engaging training experience.",
     category: "Web Application",
     tech: ["React", "TypeScript", "Next.js", "Django Rest Framework", "AWS", "Supabase", "Docker", "ETL Pipelines"],
+    image: "/ecommerce-product-interface.jpg",
+    metrics: ["Currently working on the project..."],
+  },
+  {
+    id: 4,
+    title: "Ocatava Luna - Jewelry Store",
+    description:
+    "A modern jewelry e-commerce platform designed to showcase elegant collections with high-quality product visuals, seamless navigation, and secure checkout experiences, featuring handcrafted and luxury pieces across rings, necklaces, bracelets, and custom designs, built with a scalable architecture and performance-optimized interfaces to deliver a smooth and premium shopping experience.",
+    category: "Online Store Application",
+    tech: ["React", "TypeScript", "Next.js", "Django Rest Framework", "AWS", "Supabase", "Docker", "Stripe"],
     image: "/ecommerce-product-interface.jpg",
     metrics: ["Currently working on the project..."],
   },
@@ -113,7 +123,7 @@ export function Portfolio() {
                   </Badge>
                 </div>
 
-                <h3 className="text-2xl font-bold mb-3 group-hover:text-primary transition-colors"> <a href={project.url}>{project.title}</a></h3>
+                <h3 className="text-2xl font-bold mb-3 group-hover:text-primary transition-colors cursor-pointer"> <a href={project.url}>{project.title}</a></h3>
 
                 <p className="text-muted-foreground mb-4 leading-relaxed">{project.description}</p>
 

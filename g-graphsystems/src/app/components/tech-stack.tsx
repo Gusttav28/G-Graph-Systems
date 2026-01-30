@@ -1,10 +1,10 @@
 import { Badge } from '@/components/ui/badge'
 
 const technologies = {
-  Frontend: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Astro'],
+  Frontend: ['JavaScript', 'HTML', 'CSS', 'React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Astro',],
   Backend: ['Node.js', 'Express.js', 'Python', 'Django', 'Django Rest Framework', 'Fast API', 'PostgreSQL', 'Mysql'],
-  Cloud: ['AWS', 'Vercel', 'PythonAnyWhere', 'Jupyter Notebook', 'Docker', 'Kubernetes', 'Supabase'],
-  Tools: ['Git', 'CI/CD', 'REST APIs', 'Monitoring'],
+  Cloud: ['AWS', 'Vercel', 'PythonAnyWhere', 'Jupyter Notebook', 'Docker', 'Kubernetes', 'Supabase', 'Snowflake', 'Databricks'],
+  Tools: ['Git', 'CI/CD', 'REST APIs', 'Monitoring', 'Grafana', 'Git hub actions'],
 }
 
 export function TechStack() {

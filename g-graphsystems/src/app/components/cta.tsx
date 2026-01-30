@@ -8,17 +8,41 @@ import { Mail, MessageSquare, Send } from 'lucide-react'
 
 export function CTA() {
   const [formData, setFormData] = useState({
-    name: '',
+    fullname: '',
+    phone_number: '',
     email: '',
     message: '',
   })
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     console.log('[v0] Form submitted:', formData)
     // Handle form submission
-    alert('Thank you! We will get back to you soon.')
-    setFormData({ name: '', email: '', message: '' })
+
+    try {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/send-email`, {
+        method: 'POST',
+        headers: {
+          'Content-Type':'application/json',
+        },
+        body: JSON.stringify({
+          full_name: formData.fullname,
+          phone_number: formData.phone_number,
+          email: formData.email,
+          project_details: formData.message
+        }),
+      });
+      if (!response.ok){
+          throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      window.alert('Thank you! We will get back to you soon.')
+      const result = await response.json();
+      console.log(result) 
+    } catch (error) {
+      console.log(error)
+    }
+    setFormData({ fullname: '', phone_number:'', email: '', message: '' })
+
   }
 
   return (
@@ -80,13 +104,25 @@ export function CTA() {
             <form onSubmit={handleSubmit} className="space-y-4 p-6 bg-card rounded-lg border border-border">
               <div>
                 <label htmlFor="name" className="text-sm font-medium mb-2 block">
-                  Name
+                  Full Name
                 </label>
                 <Input
-                  id="name"
-                  value={formData.name}
-                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                  id="fullname"
+                  value={formData.fullname}
+                  onChange={(e) => setFormData({ ...formData, fullname: e.target.value })}
                   placeholder="Your name"
+                  required
+                />
+              </div>
+              <div>
+                <label htmlFor="number" className="text-sm font-medium mb-2 block">
+                  Phone Number
+                </label>
+                <Input
+                  id="Phone Number"
+                  value={formData.phone_number}
+                  onChange={(e) => setFormData({ ...formData, phone_number: e.target.value })}
+                  placeholder="Your phone number"
                   required
                 />
               </div>
@@ -127,6 +163,7 @@ export function CTA() {
           </div>
         </div>
       </div>
+
     </section>
   )
 }

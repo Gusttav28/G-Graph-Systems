@@ -22,7 +22,7 @@ export default function ContactPage() {
     message: "",
   })
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     console.log("[v0] Contact form submitted:", formData)
     alert("Thank you! We will get back to you within 24 hours.")
@@ -36,6 +36,20 @@ export default function ContactPage() {
       timeline: "",
       message: "",
     })
+
+    // try {
+    //   const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL_SERVICES}/send-email` {
+    //     method: 'POST',
+    //     headers: {
+    //       'Content-type':'application/json',
+    //     },
+    //     body: JSON.stringify({
+    //       full_name: formData.name
+    //     })
+    //   })
+    // } catch (error) {
+      
+    // }
   }
 
   return (

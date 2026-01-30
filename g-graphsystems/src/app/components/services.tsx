@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card"
-import { Globe, Smartphone, Cpu, Database, Cloud, Lock } from "lucide-react"
+import { Globe, Smartphone, Cpu, Database, Cloud, Lock, Workflow, Handshake } from "lucide-react"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 
@@ -20,14 +20,6 @@ const services = [
   //     "Native and cross-platform mobile solutions that deliver exceptional user experiences on iOS and Android.",
   //   features: ["React Native", "Native iOS/Android", "Offline-First", "Push Notifications"],
   // },
-  // {
-  //   icon: Cpu,
-  //   title: "Complex Systems",
-  //   slug: "complex-systems",
-  //   description:
-  //     "Enterprise-grade software systems with microservices architecture, built to handle millions of operations.",
-  //   features: ["Microservices", "Event-Driven", "High Performance", "Distributed Systems"],
-  // },
   {
     icon: Database,
     title: "Data Engineering",
@@ -43,13 +35,29 @@ const services = [
       "DevOps and cloud architecture services for AWS, Azure, and GCP. CI/CD pipelines and infrastructure as code.",
     features: ["AWS/Azure/GCP", "Kubernetes", "CI/CD Automation", "Infrastructure as Code"],
   },
-  // {
-  //   icon: Lock,
-  //   title: "Security & Compliance",
-  //   slug: "security-compliance",
-  //   description: "Security-first development with compliance standards. Penetration testing and security audits.",
-  //   features: ["Security Audits", "GDPR/HIPAA", "Penetration Testing", "Zero-Trust Architecture"],
-  // },
+  {
+    icon: Cpu,
+    title: "Saas Platforms",
+    slug: "highly scalable - cloud native",
+    description: "Scalable cloud-native platform with seamless enterprise integration, automated provisioning, and high availability for uninterrupted business continuity.",
+    features: ["Single Sign-On (SSO)", "99.9% Uptime SLA", "API First Design", "Role-Based Access Control (RBAC)"],
+  },
+   {
+    icon: Workflow,
+    title: "Automations and Reporting",
+    slug: "workflow engine - real-time data",
+    description:
+      "Automated workflow engine with real-time data orchestration. Transform complex datasets into actionable insights through scheduled reporting and intelligent event-triggering.",
+    features: ["Event-Driven Triggers", "Custom Report Builder", "Scheduled Exports", "No-Code Workflow Builder"],
+  },
+   {
+    icon: Handshake,
+    title: "IT Consulting & Strategic Planning",
+    slug: "Business goals - Degital Transformation",
+    description:
+      "Strategic technology roadmapping and infrastructure optimization. Aligning IT architecture with business goals through digital transformation, risk management, and scalable growth planning.",
+    features: ["Digital Transformation", "IT Infrastructure Audit", "Risk Mitigation", "Strategic Roadmapping"],
+  },
 ]
 
 export function Services() {

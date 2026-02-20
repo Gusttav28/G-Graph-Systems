@@ -89,9 +89,54 @@ const roleInfo = [
             Show awareness of performance, scalability, and user impact\
             Demonstrate professionalism, especially in customer-facing scenarios\
             If you have any questions as you prepare, don't hesitate to reach out.\
-            Wishing you the best of luck — you've got this! 🚀"
+            Wishing you the best of luck — you've got this! 🚀",
+        href: "https://www.servicenow.com/docs/r/impact/io-triage-sn-instance.html"
     },
 
+]
+const useFullLinks = [
+    {
+        id: 1,
+        href: (
+            <a href="https://www.servicenow.com/docs/r/impact/io-triage-sn-instance.html">Service Now link</a>
+        )
+    },
+    {
+        id: 2,
+        href: (
+            <a href="https://www.youtube.com/watch?v=pw14NzfYPa8">Dev Tools Tricks | Debugging frontend problems using browser developer tools</a>
+        )
+    },
+    {
+        id: 3,
+        href: (
+            <a href="https://www.youtube.com/watch?v=NBAjlYb6jIs">How browsers render web pages</a>
+        )
+    },
+    {
+        id: 4,
+        href: (
+            <a href="https://www.youtube.com/watch?v=7GRKUaQ8Spk">Client-side vs server-side how it works</a>
+        )
+    },
+    {
+        id: 5,
+        href: (
+            <a href="https://www.youtube.com/watch?v=TiccevwEVe8">Java Object-Oriented Programming (with actual code)</a>
+        )
+    },
+    {
+        id: 6,
+        href: (
+            <a href="https://www.youtube.com/watch?v=pTB0EiLXUC8">Object-Oriented programing (JavaScript)</a>
+        )
+    },
+    {
+        id: 7,
+        href: (
+            <a href="https://www.youtube.com/watch?v=KMLOWkGAxVc">Safely decoding and handling JSON</a>
+        )
+    },
 ]
 
 export function Admin() {
@@ -104,6 +149,16 @@ export function Admin() {
                         <p className="mt-5 text-mb">🔘 {role.description}</p>
                     </div>
                 ))}
+            </div>
+            <div className="container mx-auto px-4 mt-15 lg:px-68">
+                <h1 className="text-2xl font-bold">Other references to check: </h1>
+                {useFullLinks.map((links) => (
+                    <li className="ml-10 mt-5" key={links.id}>
+                        <a className="hover:text-cyan-600 underline text-neutral-400" href="">{links.href}</a>
+                    </li>
+                ))}
+                <h1 className="text-2xl mt-10 font-bold">JavaScript function to review</h1>
+                <img src="/JavaSFunction.jpg" alt="javascriptFunction" className="rounded-lg mt-8 ml-8 size-80 shadow-lg col-span-2" />
             </div>
         </section>
     )

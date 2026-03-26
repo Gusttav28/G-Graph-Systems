@@ -137,6 +137,12 @@ const useFullLinks = [
             <a href="https://www.youtube.com/watch?v=KMLOWkGAxVc">Safely decoding and handling JSON</a>
         )
     },
+    {
+        id: 8,
+        href: (
+            <a href="/fluent-python.pdf">Fluent Python PDF Book</a>
+        )
+    },
 ]
 
 export function Admin() {

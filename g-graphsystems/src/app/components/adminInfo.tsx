@@ -143,6 +143,12 @@ const useFullLinks = [
             <a href="/fluent-python.pdf">Fluent Python PDF Book</a>
         )
     },
+    {
+        id: 9,
+        href: (
+            <a href="https://fastapipossst-890b1f34805f.herokuapp.com/docs">FastAPI Heroku App</a>
+        )
+    },
 ]
 
 export function Admin() {
